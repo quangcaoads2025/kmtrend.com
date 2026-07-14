@@ -1,41 +1,142 @@
 <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chính sách bảo mật | KMTrend</title>
+  <meta name="description" content="Chính sách bảo mật của KMTrend về việc thu thập, sử dụng, lưu trữ và bảo vệ thông tin khách hàng khi sử dụng dịch vụ.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.kmtrend.com/privacy.html">
+  <link rel="icon" href="assets/kmtrend-mark.png">
+  <link rel="stylesheet" href="assets/style.css">
 
-<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Chính sách bảo mật | KMTrend</title><link href="assets/kmtrend-mark.png" rel="icon"/><link href="assets/style.css" rel="stylesheet"/></head>
-<body><header class="site-header premium-site-header">
-<div class="container header-inner premium-header-inner">
-<a aria-label="KMTrend - Trang chủ" class="brand premium-brand" href="index.html">
-<img alt="KMTrend.com" src="assets/kmtrend-logo-header.png"/>
-</a>
-<button aria-expanded="false" aria-label="Mở menu" class="menu-toggle premium-menu-toggle">
-<span></span><span></span><span></span>
-</button>
-<nav aria-label="Điều hướng chính" class="main-nav premium-main-nav">
-<a class="nav-link" href="index.html">Trang chủ</a><a class="nav-link" href="gioi-thieu.html">Giới thiệu</a><a class="nav-link" href="dich-vu.html">Dịch vụ</a><a class="nav-link" href="index.html#social">Mạng xã hội</a><a class="nav-link" href="index.html#process">Quy trình</a><a class="nav-link" href="du-an.html">Dự án</a><a class="nav-link" href="bai-viet.html">Bài viết</a>
-</nav>
-<a class="header-cta premium-header-cta" href="tel:0848525352">
-<span aria-hidden="true" class="header-phone-icon">☎</span>
-<span class="cta-desktop">0848 52 53 52</span>
-<span class="cta-mobile">Tư vấn</span>
-</a>
-</div>
+  <style>
+    .privacy-page{min-height:100vh;background:radial-gradient(circle at 92% 6%,rgba(255,79,39,.10),transparent 27%),linear-gradient(180deg,#fbfcff 0%,#fff 38%,#f7f9fc 100%)}
+    .privacy-hero{padding:86px 0 62px;border-bottom:1px solid #e8edf3}
+    .privacy-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+    .privacy-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid #dde3eb;border-radius:999px;background:rgba(255,255,255,.9);color:#586377;font-size:11px;font-weight:700;box-shadow:0 8px 24px rgba(15,23,42,.04)}
+    .privacy-kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:#ff4f27}
+    .privacy-hero h1{margin:20px 0 18px;font-size:clamp(42px,5vw,68px);line-height:1.06;letter-spacing:-2.8px;color:#0d1729}
+    .privacy-hero h1 span{color:#ff4f27}
+    .privacy-lead{max-width:700px;margin:0;color:#647084;font-size:16px;line-height:1.8}
+    .privacy-summary-card{padding:28px;border:1px solid #e0e5ed;border-radius:24px;background:rgba(255,255,255,.94);box-shadow:0 22px 55px rgba(17,29,53,.08)}
+    .privacy-summary-card h2{margin:0 0 18px;font-size:20px;color:#111a2b}
+    .privacy-summary-list{display:grid;gap:12px}
+    .privacy-summary-item{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:14px;background:#f7f9fc;border:1px solid #e8ecf2}
+    .privacy-summary-item b{width:30px;height:30px;flex:0 0 auto;border-radius:9px;display:grid;place-items:center;background:#fff0eb;color:#ff4f27;font-size:12px}
+    .privacy-summary-item span{color:#5f6a7e;font-size:13px;line-height:1.6}
+    .privacy-content{padding:80px 0 95px}
+    .privacy-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:55px;align-items:start}
+    .privacy-nav{position:sticky;top:112px;padding:18px;border:1px solid #e0e5ed;border-radius:18px;background:#fff;box-shadow:0 14px 35px rgba(15,23,42,.05)}
+    .privacy-nav strong{display:block;margin-bottom:12px;font-size:13px;color:#182235}
+    .privacy-nav a{display:block;padding:10px 11px;border-radius:10px;color:#697386;font-size:12px;font-weight:600;transition:.2s ease}
+    .privacy-nav a:hover{background:#fff1ec;color:#ff4f27;transform:translateX(3px)}
+    .privacy-sections{display:grid;gap:18px}
+    .privacy-card{padding:30px 32px;border:1px solid #e0e5ed;border-radius:20px;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,.04)}
+    .privacy-card-number{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:28px;padding:0 10px;border-radius:999px;background:#fff0eb;color:#ff4f27;font-size:11px;font-weight:800;margin-bottom:14px}
+    .privacy-card h2{margin:0 0 12px;color:#111a2b;font-size:24px;letter-spacing:-.6px}
+    .privacy-card p{margin:0;color:#667085;font-size:14px;line-height:1.8}
+    .privacy-card ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+    .privacy-card li{position:relative;padding-left:22px;color:#667085;font-size:14px;line-height:1.65}
+    .privacy-card li:before{content:"✓";position:absolute;left:0;top:0;color:#ff4f27;font-weight:800}
+    .privacy-contact-box{margin-top:22px;padding:32px;border-radius:22px;background:linear-gradient(135deg,#111a2d,#18233a);color:#fff;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;box-shadow:0 22px 55px rgba(17,29,53,.18)}
+    .privacy-contact-box h2{margin:0 0 8px;font-size:26px;letter-spacing:-.8px}
+    .privacy-contact-box p{margin:0;color:#aeb8ca;font-size:13px;line-height:1.7}
+    .privacy-contact-box a{min-width:190px;height:48px;padding:0 20px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:#ff4f27;color:#fff;font-size:12px;font-weight:800;box-shadow:0 12px 28px rgba(255,79,39,.28)}
+    .privacy-updated{margin-top:18px;color:#8b95a7;font-size:11px;text-align:right}
+    .privacy-footer{background:linear-gradient(145deg,#09111f,#0d1729);color:#fff}
+    .privacy-footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:50px;padding:55px 0 42px}
+    .privacy-footer-logo img{width:205px;height:auto;object-fit:contain}
+    .privacy-footer-logo p{max-width:380px;color:#aeb8ca;font-size:12px;line-height:1.75}
+    .privacy-footer-column{display:flex;flex-direction:column;gap:9px}
+    .privacy-footer-column h3{margin:0 0 9px;font-size:13px}
+    .privacy-footer-column a,.privacy-footer-column span{color:#aeb8ca;font-size:11px}
+    .privacy-footer-bottom{border-top:1px solid rgba(255,255,255,.09);padding:16px 0;color:#748096;font-size:10px;text-align:center}
+    @media(max-width:900px){.privacy-hero-grid,.privacy-layout{grid-template-columns:1fr}.privacy-nav{position:static}.privacy-contact-box{grid-template-columns:1fr}.privacy-contact-box a{width:100%}.privacy-footer-inner{grid-template-columns:1fr 1fr}.privacy-footer-logo{grid-column:1/-1}}
+    @media(max-width:600px){.privacy-hero{padding:55px 0 40px}.privacy-hero h1{font-size:39px;letter-spacing:-1.8px}.privacy-lead{font-size:14px}.privacy-content{padding:55px 0 70px}.privacy-card{padding:23px 20px}.privacy-card h2{font-size:21px}.privacy-footer-inner{grid-template-columns:1fr;gap:30px}.privacy-footer-logo{grid-column:auto}}
+  </style>
+</head>
+<body>
+<header class="site-header premium-site-header">
+  <div class="container header-inner premium-header-inner">
+    <a aria-label="KMTrend - Trang chủ" class="brand premium-brand" href="index.html">
+      <img alt="KMTrend.com" src="assets/kmtrend-logo-header.png">
+    </a>
+    <button aria-expanded="false" aria-label="Mở menu" class="menu-toggle premium-menu-toggle"><span></span><span></span><span></span></button>
+    <nav aria-label="Điều hướng chính" class="main-nav premium-main-nav">
+      <a class="nav-link" href="index.html">Trang chủ</a>
+      <a class="nav-link" href="gioi-thieu.html">Giới thiệu</a>
+      <a class="nav-link" href="dich-vu.html">Dịch vụ</a>
+      <a class="nav-link" href="index.html#social">Mạng xã hội</a>
+      <a class="nav-link" href="index.html#process">Quy trình</a>
+      <a class="nav-link" href="du-an.html">Dự án</a>
+      <a class="nav-link" href="bai-viet.html">Bài viết</a>
+    </nav>
+    <a class="header-cta premium-header-cta" href="tel:0848525352"><span aria-hidden="true" class="header-phone-icon">☎</span><span class="cta-desktop">0848 52 53 52</span><span class="cta-mobile">Tư vấn</span></a>
+  </div>
 </header>
-<main class="legal-page"><div class="container"><span class="section-label">KMTREND</span><h1>Chính sách bảo mật</h1>
-<p>KMTrend chỉ thu thập những thông tin khách hàng chủ động cung cấp qua biểu mẫu, cuộc gọi, email hoặc Zalo.</p>
-<h2>Thông tin được thu thập</h2><p>Họ tên, số điện thoại, email, dịch vụ quan tâm và nội dung nhu cầu.</p>
-<h2>Mục đích sử dụng</h2><p>Tư vấn, báo giá, triển khai dịch vụ, hỗ trợ khách hàng và cải thiện trải nghiệm.</p>
-<h2>Bảo mật dữ liệu</h2><p>Thông tin không được bán cho bên thứ ba và chỉ được chia sẻ khi cần thiết để cung cấp dịch vụ hoặc theo yêu cầu của pháp luật.</p>
-<h2>Liên hệ</h2><p>Hotline: 0848 52 53 52 · Email: quangcaoads2025@gmail.com.</p></div></main><div aria-label="Liên hệ nhanh" class="floating-contact">
-<a aria-label="Gọi KMTrend" class="contact-fab fab-phone" href="tel:0848525352">
-<span class="fab-tooltip">Gọi ngay</span>
-<span class="fab-core"><span class="fab-icon"><img alt="" src="assets/brands/phone-white.svg"/></span></span>
-</a>
-<a aria-label="Chat Zalo với KMTrend" class="contact-fab fab-zalo" href="https://zalo.me/84848525352" rel="noopener" target="_blank">
-<span class="fab-tooltip">Chat Zalo</span>
-<span class="fab-core"><span class="fab-icon"><img alt="Zalo" src="assets/brands/zalo-contact.png"/></span></span>
-</a>
-<a aria-label="Chat Messenger với KMTrend" class="contact-fab fab-messenger" href="https://m.me/KMtrend.com.vn" rel="noopener" target="_blank">
-<span class="fab-tooltip">Messenger</span>
-<span class="fab-core"><span class="fab-icon"><img alt="Messenger" src="assets/brands/messenger-contact.svg"/></span></span>
-</a>
-</div><script src="assets/app.js"></script></body></html>
+
+<main class="privacy-page">
+  <section class="privacy-hero">
+    <div class="container privacy-hero-grid">
+      <div>
+        <span class="privacy-kicker">KMTrend · Quyền riêng tư khách hàng</span>
+        <h1>Chính sách <span>bảo mật</span></h1>
+        <p class="privacy-lead">KMTrend tôn trọng quyền riêng tư và cam kết bảo vệ thông tin cá nhân của khách hàng trong suốt quá trình tư vấn, triển khai và sử dụng dịch vụ.</p>
+      </div>
+      <aside class="privacy-summary-card">
+        <h2>Cam kết của KMTrend</h2>
+        <div class="privacy-summary-list">
+          <div class="privacy-summary-item"><b>01</b><span>Chỉ thu thập thông tin cần thiết cho quá trình tư vấn và cung cấp dịch vụ.</span></div>
+          <div class="privacy-summary-item"><b>02</b><span>Không bán hoặc trao đổi dữ liệu cá nhân cho bên thứ ba vì mục đích thương mại.</span></div>
+          <div class="privacy-summary-item"><b>03</b><span>Khách hàng có quyền yêu cầu kiểm tra, chỉnh sửa hoặc xóa thông tin đã cung cấp.</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="privacy-content">
+    <div class="container privacy-layout">
+      <aside class="privacy-nav">
+        <strong>Nội dung chính</strong>
+        <a href="#scope">Phạm vi áp dụng</a>
+        <a href="#collection">Thông tin thu thập</a>
+        <a href="#purpose">Mục đích sử dụng</a>
+        <a href="#sharing">Chia sẻ thông tin</a>
+        <a href="#security">Bảo mật dữ liệu</a>
+        <a href="#rights">Quyền khách hàng</a>
+        <a href="#contact-privacy">Liên hệ</a>
+      </aside>
+
+      <div class="privacy-sections">
+        <article class="privacy-card" id="scope"><span class="privacy-card-number">01</span><h2>Phạm vi áp dụng</h2><p>Chính sách này áp dụng đối với khách hàng truy cập website KMTrend, gửi biểu mẫu đăng ký, liên hệ qua điện thoại, email, Zalo, Messenger hoặc sử dụng các dịch vụ do KMTrend cung cấp.</p></article>
+        <article class="privacy-card" id="collection"><span class="privacy-card-number">02</span><h2>Thông tin được thu thập</h2><p>KMTrend có thể thu thập các thông tin do khách hàng chủ động cung cấp, bao gồm:</p><ul><li>Họ tên, số điện thoại và địa chỉ email.</li><li>Doanh nghiệp, lĩnh vực hoạt động và khu vực kinh doanh.</li><li>Dịch vụ quan tâm, ngân sách dự kiến và nội dung yêu cầu tư vấn.</li><li>Dữ liệu kỹ thuật cơ bản như thiết bị, trình duyệt và lượt truy cập website.</li></ul></article>
+        <article class="privacy-card" id="purpose"><span class="privacy-card-number">03</span><h2>Mục đích sử dụng thông tin</h2><ul><li>Liên hệ tư vấn, báo giá và đề xuất giải pháp phù hợp.</li><li>Triển khai, quản lý và hỗ trợ các dịch vụ khách hàng đăng ký.</li><li>Cải thiện chất lượng website, nội dung và trải nghiệm sử dụng.</li><li>Gửi thông báo liên quan đến dịch vụ khi có sự đồng ý của khách hàng.</li></ul></article>
+        <article class="privacy-card" id="sharing"><span class="privacy-card-number">04</span><h2>Chia sẻ và cung cấp thông tin</h2><p>KMTrend không bán, cho thuê hoặc trao đổi thông tin cá nhân vì mục đích thương mại. Dữ liệu chỉ được chia sẻ với đối tác kỹ thuật cần thiết để thực hiện dịch vụ, hoặc khi có yêu cầu hợp pháp từ cơ quan có thẩm quyền.</p></article>
+        <article class="privacy-card" id="security"><span class="privacy-card-number">05</span><h2>Bảo mật và lưu trữ dữ liệu</h2><p>KMTrend áp dụng các biện pháp kỹ thuật và quy trình nội bộ phù hợp để hạn chế truy cập trái phép, thất thoát hoặc sử dụng sai mục đích. Thông tin chỉ được lưu trữ trong thời gian cần thiết để thực hiện dịch vụ và nghĩa vụ liên quan.</p></article>
+        <article class="privacy-card" id="rights"><span class="privacy-card-number">06</span><h2>Quyền của khách hàng</h2><ul><li>Yêu cầu xác nhận thông tin đang được KMTrend lưu trữ.</li><li>Yêu cầu chỉnh sửa thông tin không chính xác hoặc không còn phù hợp.</li><li>Yêu cầu ngừng sử dụng hoặc xóa dữ liệu khi điều kiện cho phép.</li><li>Rút lại sự đồng ý nhận thông tin tiếp thị bất kỳ lúc nào.</li></ul></article>
+        <div class="privacy-contact-box" id="contact-privacy"><div><h2>Cần hỗ trợ về dữ liệu cá nhân?</h2><p>Liên hệ KMTrend qua hotline 0848 52 53 52 hoặc email quangcaoads2025@gmail.com để được tiếp nhận và xử lý yêu cầu.</p></div><a href="mailto:quangcaoads2025@gmail.com">Gửi yêu cầu hỗ trợ ↗</a></div>
+        <p class="privacy-updated">Cập nhật lần cuối: 14/07/2026</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="privacy-footer">
+  <div class="container privacy-footer-inner">
+    <div class="privacy-footer-logo"><img src="assets/kmtrend-logo-header.png" alt="KMTrend.com"><p>Media · Marketing · Technology — giải pháp tăng trưởng toàn diện cho doanh nghiệp trong môi trường số.</p></div>
+    <div class="privacy-footer-column"><h3>Điều hướng</h3><a href="index.html">Trang chủ</a><a href="gioi-thieu.html">Giới thiệu</a><a href="dich-vu.html">Dịch vụ</a><a href="du-an.html">Dự án</a></div>
+    <div class="privacy-footer-column"><h3>Liên hệ</h3><a href="tel:0848525352">0848 52 53 52</a><a href="mailto:quangcaoads2025@gmail.com">quangcaoads2025@gmail.com</a><span>Ninh Kiều, Cần Thơ</span></div>
+  </div>
+  <div class="privacy-footer-bottom">© 2026 KMTrend. Bảo lưu mọi quyền.</div>
+</footer>
+
+<div aria-label="Liên hệ nhanh" class="floating-contact">
+  <a aria-label="Gọi KMTrend" class="contact-fab fab-phone" href="tel:0848525352"><span class="fab-tooltip">Gọi ngay</span><span class="fab-core"><span class="fab-icon"><img alt="" src="assets/brands/phone-white.svg"></span></span></a>
+  <a aria-label="Chat Zalo với KMTrend" class="contact-fab fab-zalo" href="https://zalo.me/84848525352" rel="noopener" target="_blank"><span class="fab-tooltip">Chat Zalo</span><span class="fab-core"><span class="fab-icon"><img alt="Zalo" src="assets/brands/zalo-contact.png"></span></span></a>
+  <a aria-label="Chat Messenger với KMTrend" class="contact-fab fab-messenger" href="https://m.me/KMtrend.com.vn" rel="noopener" target="_blank"><span class="fab-tooltip">Messenger</span><span class="fab-core"><span class="fab-icon"><img alt="Messenger" src="assets/brands/messenger-contact.svg"></span></span></a>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
