@@ -1782,3 +1782,264 @@ textarea::placeholder{
     margin-bottom: 16px !important;
   }
 }
+
+/* ============================================================
+   FIX CONTACT SECTION — tăng cỡ chữ và cân đối toàn bộ khu liên hệ
+   ============================================================ */
+
+.contact-section{
+  padding:88px 0 90px !important;
+}
+
+.contact-grid{
+  grid-template-columns:minmax(0,.88fr) minmax(430px,1.12fr) !important;
+  gap:82px !important;
+  align-items:center !important;
+}
+
+.contact-copy h2{
+  max-width:520px !important;
+  margin:0 0 14px !important;
+  font-size:clamp(2.05rem,3.15vw,3rem) !important;
+  line-height:1.16 !important;
+  letter-spacing:-.025em !important;
+  font-weight:700 !important;
+}
+
+.contact-copy > p{
+  max-width:520px !important;
+  margin:0 !important;
+  font-size:clamp(.96rem,1.08vw,1.08rem) !important;
+  line-height:1.72 !important;
+  font-weight:400 !important;
+  color:#bec7d8 !important;
+}
+
+.contact-list{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:14px !important;
+  margin:30px 0 30px !important;
+}
+
+.contact-list a,
+.contact-list span{
+  min-height:38px !important;
+  padding:8px 12px !important;
+  border:1px solid rgba(255,255,255,.09) !important;
+  border-radius:11px !important;
+  background:rgba(255,255,255,.035) !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:12px !important;
+  font-size:clamp(.84rem,.94vw,.95rem) !important;
+  line-height:1.45 !important;
+  font-weight:500 !important;
+  color:#eef3fb !important;
+  transition:.2s ease !important;
+}
+
+.contact-list a:hover{
+  background:rgba(255,255,255,.07) !important;
+  border-color:rgba(255,79,39,.42) !important;
+  transform:translateX(3px) !important;
+}
+
+.contact-list svg{
+  width:18px !important;
+  height:18px !important;
+  flex:0 0 auto !important;
+  color:var(--orange) !important;
+  font-size:18px !important;
+}
+
+.contact-stats{
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:12px !important;
+  max-width:620px !important;
+  margin-top:8px !important;
+}
+
+.contact-stats div{
+  min-height:102px !important;
+  padding:15px 14px !important;
+  border:1px solid rgba(255,255,255,.09) !important;
+  border-radius:13px !important;
+  background:rgba(255,255,255,.035) !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+}
+
+.contact-stats div:nth-child(4){
+  grid-column:auto !important;
+}
+
+.contact-stats strong{
+  margin-bottom:7px !important;
+  font-size:clamp(1.4rem,1.8vw,1.78rem) !important;
+  line-height:1 !important;
+  font-weight:700 !important;
+  color:var(--orange) !important;
+}
+
+.contact-stats small{
+  max-width:none !important;
+  font-size:clamp(.74rem,.78vw,.82rem) !important;
+  line-height:1.45 !important;
+  font-weight:400 !important;
+  color:#b5bfd1 !important;
+}
+
+/* Form liên hệ */
+.lead-form{
+  padding:30px 30px 31px !important;
+  border-radius:20px !important;
+  box-shadow:0 22px 60px rgba(0,0,0,.16) !important;
+}
+
+.lead-form label{
+  gap:8px !important;
+  margin-bottom:15px !important;
+  font-size:clamp(.84rem,.9vw,.93rem) !important;
+  line-height:1.4 !important;
+  font-weight:600 !important;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea{
+  min-height:48px !important;
+  padding:12px 14px !important;
+  border-radius:10px !important;
+  font-size:clamp(.91rem,.98vw,1rem) !important;
+  line-height:1.45 !important;
+  font-weight:400 !important;
+}
+
+.lead-form textarea{
+  min-height:126px !important;
+}
+
+.form-row{
+  gap:14px !important;
+}
+
+.lead-form button{
+  height:48px !important;
+  margin-top:2px !important;
+  font-size:clamp(.88rem,.95vw,.98rem) !important;
+  font-weight:600 !important;
+}
+
+.form-status{
+  min-height:18px !important;
+  margin-top:10px !important;
+  font-size:.82rem !important;
+}
+
+/* Tablet */
+@media(max-width:980px){
+  .contact-section{
+    padding:76px 0 !important;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr !important;
+    gap:48px !important;
+  }
+
+  .contact-copy{
+    text-align:left !important;
+  }
+
+  .contact-copy > p{
+    margin-inline:0 !important;
+  }
+
+  .contact-list{
+    align-items:stretch !important;
+  }
+
+  .contact-stats{
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    margin-inline:0 !important;
+  }
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .contact-section{
+    padding:64px 0 70px !important;
+  }
+
+  .contact-grid{
+    gap:38px !important;
+  }
+
+  .contact-copy h2{
+    font-size:clamp(1.85rem,8vw,2.25rem) !important;
+    line-height:1.2 !important;
+  }
+
+  .contact-copy > p{
+    font-size:.94rem !important;
+    line-height:1.68 !important;
+  }
+
+  .contact-list{
+    margin:24px 0 25px !important;
+    gap:10px !important;
+  }
+
+  .contact-list a,
+  .contact-list span{
+    min-height:44px !important;
+    padding:10px 12px !important;
+    font-size:.86rem !important;
+  }
+
+  .contact-stats{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:10px !important;
+  }
+
+  .contact-stats div{
+    min-height:94px !important;
+    padding:13px 12px !important;
+  }
+
+  .contact-stats strong{
+    font-size:1.42rem !important;
+  }
+
+  .contact-stats small{
+    font-size:.76rem !important;
+  }
+
+  .lead-form{
+    padding:23px 19px 22px !important;
+    border-radius:17px !important;
+  }
+
+  .lead-form label{
+    font-size:.84rem !important;
+  }
+
+  .lead-form input,
+  .lead-form select,
+  .lead-form textarea{
+    min-height:46px !important;
+    font-size:.91rem !important;
+  }
+
+  .lead-form textarea{
+    min-height:112px !important;
+  }
+
+  .form-row{
+    grid-template-columns:1fr !important;
+    gap:0 !important;
+  }
+}
