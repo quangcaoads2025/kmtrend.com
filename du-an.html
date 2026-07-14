@@ -1,21 +1,776 @@
 <!DOCTYPE html>
-<html lang="vi"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Dự án | KMTrend</title><meta content="Các dự án quảng cáo và công nghệ tiêu biểu." name="description"/><link href="assets/kmtrend-mark.png" rel="icon"/><link href="assets/style.css" rel="stylesheet"/></head><body>
+<html lang="vi">
+<head>
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TVF3WXRN');
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Dự Án Digital Marketing, Quảng Cáo & Website | KMTrend</title>
+  <meta name="description" content="Khám phá các dự án Digital Marketing, Facebook Ads, Google Ads, TikTok Ads, Google Maps và thiết kế website tiêu biểu do KMTrend triển khai.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.kmtrend.com/du-an.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dự Án Digital Marketing, Quảng Cáo & Website | KMTrend">
+  <meta property="og:description" content="Các dự án quảng cáo, website và giải pháp tăng trưởng số tiêu biểu do KMTrend triển khai.">
+  <meta property="og:url" content="https://www.kmtrend.com/du-an.html">
+  <meta property="og:image" content="https://www.kmtrend.com/assets/kmtrend-digital-marketing-banner.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dự Án Digital Marketing, Quảng Cáo & Website | KMTrend">
+  <meta name="twitter:description" content="Các dự án quảng cáo, website và giải pháp tăng trưởng số tiêu biểu do KMTrend triển khai.">
+  <meta name="twitter:image" content="https://www.kmtrend.com/assets/kmtrend-digital-marketing-banner.webp">
+
+  <link rel="icon" href="assets/kmtrend-mark.png">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    .projects-page {
+      background:
+        radial-gradient(circle at 88% 5%, rgba(255,79,39,.11), transparent 27%),
+        linear-gradient(180deg,#fbfcff 0%,#fff 40%,#f7f9fc 100%);
+    }
+
+    .projects-hero {
+      padding: 90px 0 78px;
+      border-bottom: 1px solid #e9edf3;
+      overflow: hidden;
+    }
+
+    .projects-hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .projects-hero h1 {
+      margin: 18px 0 20px;
+      max-width: 720px;
+      font-size: clamp(42px,4.5vw,68px) !important;
+      line-height: 1.07 !important;
+      letter-spacing: -2.8px !important;
+      font-weight: 700 !important;
+      color: #0e1728;
+    }
+
+    .projects-hero h1 span {
+      color: #ff4f27;
+    }
+
+    .projects-hero p {
+      max-width: 650px;
+      margin: 0;
+      color: #657084;
+      font-size: 16px !important;
+      line-height: 1.75 !important;
+      font-weight: 400 !important;
+    }
+
+    .projects-hero-panel {
+      padding: 28px;
+      border: 1px solid #e0e5ed;
+      border-radius: 24px;
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 22px 60px rgba(16,28,51,.10);
+    }
+
+    .projects-hero-panel > span {
+      display: block;
+      margin-bottom: 17px;
+      color: #7a8496;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .projects-hero-features {
+      display: grid;
+      gap: 12px;
+    }
+
+    .projects-hero-feature {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 13px;
+      align-items: center;
+      padding: 13px;
+      border: 1px solid #e6eaf0;
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+
+    .projects-hero-feature b {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: #fff0eb;
+      color: #ff4f27;
+      font-size: 13px;
+    }
+
+    .projects-hero-feature strong {
+      display: block;
+      margin-bottom: 3px;
+      color: #172033;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .projects-hero-feature small {
+      display: block;
+      color: #778195;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .projects-showcase {
+      padding: 88px 0 96px;
+    }
+
+    .projects-section-heading {
+      max-width: 760px;
+      margin-bottom: 38px;
+    }
+
+    .projects-section-heading h2 {
+      margin: 10px 0 13px;
+      font-size: clamp(32px,3.3vw,48px) !important;
+      line-height: 1.16 !important;
+      letter-spacing: -1.8px !important;
+      font-weight: 700 !important;
+      color: #111a2b;
+    }
+
+    .projects-section-heading p {
+      margin: 0;
+      color: #667085;
+      font-size: 15px !important;
+      line-height: 1.75 !important;
+    }
+
+    .projects-grid-premium {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 22px;
+    }
+
+    .project-card-premium {
+      overflow: hidden;
+      border: 1px solid #dfe4ec;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 14px 36px rgba(15,23,42,.06);
+      transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+    }
+
+    .project-card-premium:hover {
+      transform: translateY(-7px);
+      border-color: #ffb19e;
+      box-shadow: 0 23px 55px rgba(15,23,42,.11);
+    }
+
+    .project-media-premium {
+      position: relative;
+      height: 265px;
+      overflow: hidden;
+      background: #eef1f5;
+    }
+
+    .project-media-premium img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .45s ease;
+    }
+
+    .project-card-premium:hover .project-media-premium img {
+      transform: scale(1.045);
+    }
+
+    .project-type {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.93);
+      color: #283347;
+      font-size: 10px;
+      font-weight: 600;
+      backdrop-filter: blur(8px);
+    }
+
+    .project-result {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #ff4f27;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      box-shadow: 0 8px 22px rgba(255,79,39,.28);
+    }
+
+    .project-body-premium {
+      padding: 23px 23px 24px;
+    }
+
+    .project-body-premium h3 {
+      margin: 0 0 10px;
+      color: #111a2b;
+      font-size: 20px !important;
+      line-height: 1.35 !important;
+      font-weight: 600 !important;
+      letter-spacing: -.4px !important;
+    }
+
+    .project-body-premium > p {
+      min-height: 74px;
+      margin: 0 0 19px;
+      color: #667085;
+      font-size: 13px !important;
+      line-height: 1.72 !important;
+      font-weight: 400 !important;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .project-meta span {
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: #f2f5f9;
+      color: #5f697b;
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .project-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid #edf0f4;
+      color: #ff4f27;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .project-link b {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      display: grid;
+      place-items: center;
+      background: #fff0eb;
+      color: #ff4f27;
+      transition: transform .2s ease;
+    }
+
+    .project-card-premium:hover .project-link b {
+      transform: translateX(3px);
+    }
+
+    .projects-process {
+      padding: 84px 0;
+      background: linear-gradient(135deg,#0b1424,#111d31);
+      color: #fff;
+    }
+
+    .projects-process-heading {
+      max-width: 720px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .projects-process-heading h2 {
+      margin: 10px 0 12px;
+      font-size: clamp(32px,3.2vw,48px) !important;
+      line-height: 1.17 !important;
+      letter-spacing: -1.7px !important;
+      font-weight: 700 !important;
+    }
+
+    .projects-process-heading p {
+      margin: 0;
+      color: #aeb9cc;
+      font-size: 14px !important;
+      line-height: 1.75 !important;
+    }
+
+    .projects-process-grid {
+      display: grid;
+      grid-template-columns: repeat(4,minmax(0,1fr));
+      gap: 16px;
+    }
+
+    .projects-process-card {
+      min-height: 190px;
+      padding: 23px;
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 18px;
+      background: rgba(255,255,255,.045);
+    }
+
+    .projects-process-card b {
+      display: inline-flex;
+      margin-bottom: 22px;
+      color: #ff5b36;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .projects-process-card h3 {
+      margin: 0 0 9px;
+      color: #fff;
+      font-size: 17px !important;
+      font-weight: 600 !important;
+    }
+
+    .projects-process-card p {
+      margin: 0;
+      color: #aeb8ca;
+      font-size: 12px !important;
+      line-height: 1.72 !important;
+    }
+
+    .projects-cta {
+      padding: 82px 0;
+      background: #fff;
+    }
+
+    .projects-cta-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+      align-items: center;
+      padding: 42px 45px;
+      border: 1px solid #e0e5ed;
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 90% 20%,rgba(255,79,39,.13),transparent 34%),
+        #f9fafc;
+      box-shadow: 0 18px 48px rgba(15,23,42,.06);
+    }
+
+    .projects-cta-box h2 {
+      margin: 0 0 10px;
+      color: #10192b;
+      font-size: clamp(29px,3vw,43px) !important;
+      line-height: 1.18 !important;
+      letter-spacing: -1.5px !important;
+      font-weight: 700 !important;
+    }
+
+    .projects-cta-box p {
+      max-width: 700px;
+      margin: 0;
+      color: #657084;
+      font-size: 14px !important;
+      line-height: 1.7 !important;
+    }
+
+    .projects-cta-button {
+      min-width: 205px;
+      height: 50px;
+      padding: 0 22px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ff4f27;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 13px 30px rgba(255,79,39,.25);
+    }
+
+    @media (max-width: 980px) {
+      .projects-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .projects-grid-premium {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+
+      .projects-process-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+
+      .projects-cta-box {
+        grid-template-columns: 1fr;
+      }
+
+      .projects-cta-button {
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .projects-hero {
+        padding: 58px 0 48px;
+      }
+
+      .projects-hero h1 {
+        font-size: clamp(36px,10vw,46px) !important;
+        letter-spacing: -1.8px !important;
+      }
+
+      .projects-hero p {
+        font-size: 14px !important;
+      }
+
+      .projects-hero-panel {
+        padding: 20px;
+        border-radius: 19px;
+      }
+
+      .projects-showcase {
+        padding: 64px 0 70px;
+      }
+
+      .projects-section-heading h2 {
+        font-size: 31px !important;
+      }
+
+      .projects-grid-premium {
+        grid-template-columns: 1fr;
+      }
+
+      .project-media-premium {
+        height: 235px;
+      }
+
+      .project-body-premium > p {
+        min-height: auto;
+      }
+
+      .projects-process {
+        padding: 65px 0;
+      }
+
+      .projects-process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .projects-process-card {
+        min-height: auto;
+      }
+
+      .projects-cta {
+        padding: 60px 0;
+      }
+
+      .projects-cta-box {
+        padding: 28px 22px;
+        border-radius: 20px;
+      }
+
+      .projects-cta-box h2 {
+        font-size: 29px !important;
+      }
+
+      .projects-cta-button {
+        width: 100%;
+      }
+    }
+  </style>
+<link rel="stylesheet" href="assets/typography-standard.css">
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVF3WXRN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <header class="site-header premium-site-header">
-<div class="container header-inner premium-header-inner">
-<a aria-label="KMTrend - Trang chủ" class="brand premium-brand" href="index.html">
-<img alt="KMTrend.com" src="assets/kmtrend-logo-header.png"/>
-</a>
-<button aria-expanded="false" aria-label="Mở menu" class="menu-toggle premium-menu-toggle">
-<span></span><span></span><span></span>
-</button>
-<nav aria-label="Điều hướng chính" class="main-nav premium-main-nav">
-<a class="nav-link" href="index.html">Trang chủ</a><a class="nav-link" href="gioi-thieu.html">Giới thiệu</a><a class="nav-link" href="dich-vu.html">Dịch vụ</a><a class="nav-link" href="index.html#social">Mạng xã hội</a><a class="nav-link" href="index.html#process">Quy trình</a><a class="nav-link active" href="du-an.html">Dự án</a><a class="nav-link" href="bai-viet.html">Bài viết</a>
-</nav>
-<a class="header-cta premium-header-cta" href="tel:0848525352">
-<span aria-hidden="true" class="header-phone-icon">☎</span>
-<span class="cta-desktop">0848 52 53 52</span>
-<span class="cta-mobile">Tư vấn</span>
-</a>
-</div>
+  <div class="container header-inner premium-header-inner">
+    <a aria-label="KMTrend - Trang chủ" class="brand premium-brand" href="index.html">
+      <img alt="KMTrend.com" src="assets/kmtrend-logo-header.png">
+    </a>
+
+    <button aria-expanded="false" aria-label="Mở menu" class="menu-toggle premium-menu-toggle">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav aria-label="Điều hướng chính" class="main-nav premium-main-nav">
+      <a class="nav-link" href="index.html">Trang chủ</a>
+      <a class="nav-link" href="gioi-thieu.html">Giới thiệu</a>
+      <a class="nav-link" href="dich-vu.html">Dịch vụ</a>
+      <a class="nav-link" href="index.html#social">Mạng xã hội</a>
+      <a class="nav-link" href="index.html#process">Quy trình</a>
+      <a class="nav-link active" href="du-an.html">Dự án</a>
+      <a class="nav-link" href="bai-viet.html">Bài viết</a>
+    </nav>
+
+    <a class="header-cta premium-header-cta" href="tel:0848525352">
+      <span aria-hidden="true" class="header-phone-icon">☎</span>
+      <span class="cta-desktop">0848 52 53 52</span>
+      <span class="cta-mobile">Tư vấn</span>
+    </a>
+  </div>
 </header>
-<main><section class="service-page-hero"><div class="container"><div class="pill"><i></i> Dự án KMTrend</div><h1>Kết quả thực tế<br/><span>từ chiến lược đến chuyển đổi</span></h1><p>Các mô hình dự án tiêu biểu trong quảng cáo, thương mại điện tử, website và công nghệ.</p></div></section><section class="section projects-section"><div class="container"><div class="project-grid"><article class="project-card"><div class="project-image"><img alt="" src="assets/project-dashboard.webp"/><b class="result-badge">ROAS 7.2x</b></div><div class="project-content"><h3>Local brand thời trang</h3><p>Scale ngân sách đa nền tảng và cải thiện chuyển đổi.</p></div></article><article class="project-card"><div class="project-image"><img alt="" src="assets/project-social.webp"/><b class="result-badge">+180% đơn</b></div><div class="project-content"><h3>Chuỗi F&amp;B khu vực</h3><p>Kết hợp Google Maps, Social và Zalo.</p></div></article><article class="project-card"><div class="project-image"><img alt="" src="assets/hero-office.webp"/><b class="result-badge">-42% CPA</b></div><div class="project-content"><h3>Hệ thống bán hàng số</h3><p>Tối ưu website, tracking và chăm sóc khách hàng.</p></div></article></div></div></section></main><footer class="site-footer premium-footer"><div class="container footer-main"><div class="footer-brand-block"><a class="footer-brand-logo" href="index.html"><img alt="KMTrend.com" src="assets/kmtrend-logo-footer-transparent.png"/></a><p>Media · Marketing · Technology — đồng hành cùng doanh nghiệp tăng trưởng trên nền tảng số.</p></div><div class="footer-column"><h3>Điều hướng</h3><a href="gioi-thieu.html">Giới thiệu</a><a href="dich-vu.html">Dịch vụ</a><a href="du-an.html">Dự án</a></div><div class="footer-column"><h3>Thông tin</h3><a href="bai-viet.html">Bài viết</a><a href="privacy.html">Chính sách</a><a href="lien-he.html">Liên hệ</a></div><div class="footer-column footer-contact-column"><h3>Liên hệ</h3><a href="tel:0848525352"><strong>0848 52 53 52</strong><small>Hotline</small></a><a href="mailto:quangcaoads2025@gmail.com"><strong>quangcaoads2025@gmail.com</strong><small>Email</small></a></div></div></footer><script src="assets/app.js"></script></body></html>
+
+<main class="projects-page">
+  <section class="projects-hero">
+    <div class="container projects-hero-grid">
+      <div>
+        <div class="pill"><i></i> Dự án KMTrend</div>
+        <h1>Kết quả thực tế<br><span>từ chiến lược đến chuyển đổi</span></h1>
+        <p>
+          Mỗi dự án được xây dựng dựa trên mục tiêu kinh doanh, hành vi khách hàng và dữ liệu thực tế — từ quảng cáo, nội dung, Google Maps đến website và hệ thống chăm sóc khách hàng.
+        </p>
+      </div>
+
+      <aside class="projects-hero-panel">
+        <span>Giá trị trong mỗi dự án</span>
+        <div class="projects-hero-features">
+          <div class="projects-hero-feature">
+            <b>01</b>
+            <div>
+              <strong>Đúng mục tiêu</strong>
+              <small>Tập trung vào chỉ số gắn với khách hàng và doanh thu.</small>
+            </div>
+          </div>
+          <div class="projects-hero-feature">
+            <b>02</b>
+            <div>
+              <strong>Đúng hệ thống</strong>
+              <small>Kết nối quảng cáo, nội dung, website và dữ liệu.</small>
+            </div>
+          </div>
+          <div class="projects-hero-feature">
+            <b>03</b>
+            <div>
+              <strong>Đo lường rõ ràng</strong>
+              <small>Theo dõi hiệu suất và tối ưu dựa trên dữ liệu thực tế.</small>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="projects-showcase">
+    <div class="container">
+      <div class="projects-section-heading">
+        <span class="section-label">DỰ ÁN TIÊU BIỂU</span>
+        <h2>Một số mô hình triển khai nổi bật</h2>
+        <p>
+          Các dự án bên dưới thể hiện cách KMTrend kết hợp nhiều nền tảng và giải pháp để hỗ trợ doanh nghiệp cải thiện khả năng tiếp cận, chuyển đổi và vận hành.
+        </p>
+      </div>
+
+      <div class="projects-grid-premium">
+        <article class="project-card-premium">
+          <div class="project-media-premium">
+            <img src="assets/project-dashboard.webp" alt="Dự án quảng cáo đa nền tảng cho local brand thời trang">
+            <span class="project-type">Performance Marketing</span>
+            <b class="project-result">ROAS 7.2x</b>
+          </div>
+          <div class="project-body-premium">
+            <h3>Local brand thời trang</h3>
+            <p>Triển khai quảng cáo đa nền tảng, tối ưu nội dung và phân bổ ngân sách theo nhóm sản phẩm có hiệu quả tốt.</p>
+            <div class="project-meta">
+              <span>Meta Ads</span>
+              <span>TikTok Ads</span>
+              <span>Tracking</span>
+            </div>
+            <div class="project-link">
+              <span>Tối ưu hiệu suất chuyển đổi</span>
+              <b>↗</b>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card-premium">
+          <div class="project-media-premium">
+            <img src="assets/project-social.webp" alt="Dự án Digital Marketing cho chuỗi F&B khu vực">
+            <span class="project-type">Local Marketing</span>
+            <b class="project-result">+180% đơn</b>
+          </div>
+          <div class="project-body-premium">
+            <h3>Chuỗi F&amp;B khu vực</h3>
+            <p>Kết hợp Google Business Profile, mạng xã hội và Zalo để tăng nhận diện, chỉ đường và lượng khách hàng địa phương.</p>
+            <div class="project-meta">
+              <span>Google Maps</span>
+              <span>Social Media</span>
+              <span>Zalo OA</span>
+            </div>
+            <div class="project-link">
+              <span>Mở rộng khách hàng khu vực</span>
+              <b>↗</b>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card-premium">
+          <div class="project-media-premium">
+            <img src="assets/hero-office.webp" alt="Dự án website và hệ thống bán hàng số">
+            <span class="project-type">Website &amp; Automation</span>
+            <b class="project-result">-42% CPA</b>
+          </div>
+          <div class="project-body-premium">
+            <h3>Hệ thống bán hàng số</h3>
+            <p>Tối ưu website, biểu mẫu, tracking và quy trình chăm sóc khách hàng để giảm chi phí trên mỗi khách hàng tiềm năng.</p>
+            <div class="project-meta">
+              <span>Website</span>
+              <span>CRM</span>
+              <span>Automation</span>
+            </div>
+            <div class="project-link">
+              <span>Tối ưu quy trình vận hành</span>
+              <b>↗</b>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-process">
+    <div class="container">
+      <div class="projects-process-heading">
+        <span class="section-label">CÁCH KMTREND TRIỂN KHAI</span>
+        <h2>Từ bài toán kinh doanh đến kết quả có thể đo lường</h2>
+        <p>Quy trình được thiết kế để bảo đảm mỗi hạng mục đều phục vụ một mục tiêu cụ thể.</p>
+      </div>
+
+      <div class="projects-process-grid">
+        <article class="projects-process-card">
+          <b>01 · Phân tích</b>
+          <h3>Xác định vấn đề</h3>
+          <p>Đánh giá thị trường, khách hàng, sản phẩm và dữ liệu hiện có.</p>
+        </article>
+        <article class="projects-process-card">
+          <b>02 · Chiến lược</b>
+          <h3>Chọn đúng giải pháp</h3>
+          <p>Lựa chọn nền tảng, thông điệp, hành trình chuyển đổi và ngân sách.</p>
+        </article>
+        <article class="projects-process-card">
+          <b>03 · Triển khai</b>
+          <h3>Đồng bộ hệ thống</h3>
+          <p>Thực hiện nội dung, quảng cáo, website, tracking và tự động hóa.</p>
+        </article>
+        <article class="projects-process-card">
+          <b>04 · Tối ưu</b>
+          <h3>Đo lường liên tục</h3>
+          <p>Phân tích hiệu suất, thử nghiệm và cải thiện theo dữ liệu thực tế.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-cta">
+    <div class="container">
+      <div class="projects-cta-box">
+        <div>
+          <h2>Bạn đang có một dự án cần triển khai?</h2>
+          <p>Chia sẻ mục tiêu, ngành hàng và vấn đề hiện tại. KMTrend sẽ tư vấn hướng triển khai phù hợp với nguồn lực thực tế của doanh nghiệp.</p>
+        </div>
+        <a class="projects-cta-button" href="lien-he.html">Trao đổi với KMTrend ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer premium-footer">
+  <div class="container footer-main">
+    <div class="footer-brand-block">
+      <a class="footer-brand-logo" href="index.html">
+        <img alt="KMTrend.com" src="assets/kmtrend-logo-footer-transparent.png">
+      </a>
+      <p>Media · Marketing · Technology — đồng hành cùng doanh nghiệp tăng trưởng trên nền tảng số.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Điều hướng</h3>
+      <a href="index.html">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="dich-vu.html">Dịch vụ</a>
+      <a href="du-an.html">Dự án</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Thông tin</h3>
+      <a href="bai-viet.html">Bài viết</a>
+      <a href="privacy.html">Chính sách bảo mật</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </div>
+
+    <div class="footer-column footer-contact-column">
+      <h3>Liên hệ</h3>
+      <a href="tel:0848525352">
+        <strong>0848 52 53 52</strong>
+        <small>Hotline tư vấn</small>
+      </a>
+      <a href="mailto:quangcaoads2025@gmail.com">
+        <strong>quangcaoads2025@gmail.com</strong>
+        <small>Email</small>
+      </a>
+      <span>
+        <strong>Ninh Kiều, Cần Thơ</strong>
+        <small>Khu vực hoạt động</small>
+      </span>
+    </div>
+  </div>
+
+  <div class="footer-bottom premium-footer-bottom">
+    <div class="container">
+      <span>© 2026 KMTrend. Bảo lưu mọi quyền.</span>
+      <div>
+        <a href="privacy.html">Chính sách bảo mật</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div aria-label="Liên hệ nhanh" class="floating-contact">
+  <a aria-label="Gọi KMTrend" class="contact-fab fab-phone" href="tel:0848525352">
+    <span class="fab-tooltip">Gọi ngay</span>
+    <span class="fab-core">
+      <span class="fab-icon"><img alt="" src="assets/brands/phone-white.svg"></span>
+    </span>
+  </a>
+
+  <a aria-label="Chat Zalo với KMTrend" class="contact-fab fab-zalo" href="https://zalo.me/84848525352" rel="noopener" target="_blank">
+    <span class="fab-tooltip">Chat Zalo</span>
+    <span class="fab-core">
+      <span class="fab-icon"><img alt="Zalo" src="assets/brands/zalo-contact.png"></span>
+    </span>
+  </a>
+
+  <a aria-label="Chat Messenger với KMTrend" class="contact-fab fab-messenger" href="https://m.me/KMtrend.com.vn" rel="noopener" target="_blank">
+    <span class="fab-tooltip">Messenger</span>
+    <span class="fab-core">
+      <span class="fab-icon"><img alt="Messenger" src="assets/brands/messenger-contact.svg"></span>
+    </span>
+  </a>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
