@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://kmtrend.com/sitemap.xml
+Sitemap: https://www.kmtrend.com/sitemap.xml
