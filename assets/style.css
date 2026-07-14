@@ -2043,3 +2043,97 @@ textarea::placeholder{
     gap:0 !important;
   }
 }
+
+
+/* ============================================================
+   FINAL HEADER LOGO FIX
+   Ảnh logo gốc có khoảng trắng bên trong nên cần scale phần ảnh
+   ============================================================ */
+
+/* Desktop lớn */
+@media (min-width:1181px){
+  .premium-header-inner{
+    grid-template-columns:270px minmax(0,1fr) 190px!important;
+    gap:24px!important;
+  }
+
+  .premium-brand{
+    width:260px!important;
+    height:72px!important;
+    min-width:260px!important;
+    overflow:visible!important;
+  }
+
+  .premium-brand img{
+    width:225px!important;
+    height:66px!important;
+    max-width:none!important;
+    max-height:none!important;
+    object-fit:contain!important;
+    object-position:left center!important;
+    transform:scale(1.32)!important;
+    transform-origin:left center!important;
+  }
+}
+
+/* Laptop / desktop vừa */
+@media (min-width:941px) and (max-width:1180px){
+  .premium-header-inner{
+    grid-template-columns:225px minmax(0,1fr) 154px!important;
+    gap:16px!important;
+  }
+
+  .premium-brand{
+    width:215px!important;
+    min-width:215px!important;
+    height:64px!important;
+    overflow:visible!important;
+  }
+
+  .premium-brand img{
+    width:185px!important;
+    height:58px!important;
+    max-width:none!important;
+    max-height:none!important;
+    transform:scale(1.28)!important;
+    transform-origin:left center!important;
+  }
+}
+
+/* Tablet */
+@media (min-width:481px) and (max-width:940px){
+  .premium-brand{
+    width:174px!important;
+    min-width:174px!important;
+    height:56px!important;
+    overflow:visible!important;
+  }
+
+  .premium-brand img{
+    width:150px!important;
+    height:52px!important;
+    max-width:none!important;
+    max-height:none!important;
+    transform:scale(1.22)!important;
+    transform-origin:left center!important;
+  }
+}
+
+/* Điện thoại */
+@media (max-width:480px){
+  .premium-brand{
+    width:132px!important;
+    min-width:132px!important;
+    height:48px!important;
+    overflow:visible!important;
+  }
+
+  .premium-brand img{
+    width:116px!important;
+    height:44px!important;
+    max-width:none!important;
+    max-height:none!important;
+    transform:scale(1.15)!important;
+    transform-origin:left center!important;
+  }
+}
