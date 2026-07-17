@@ -2137,3 +2137,142 @@ textarea::placeholder{
     transform-origin:left center!important;
   }
 }
+
+
+/* Footer copyright update 2026-07-17 */
+.premium-footer-bottom{padding:16px 0!important;font-size:11px!important}
+.premium-footer-bottom>.container{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;text-align:left!important}
+.footer-copyright-text{display:flex;flex-direction:column;gap:4px;line-height:1.45}
+.footer-copyright-text p{margin:0;color:#8e99ad;font-size:11px}
+.footer-copyright-text strong{color:#c1cad8;font-weight:700}
+.footer-copyright-text a{color:#8e99ad;text-decoration:none}
+.footer-copyright-text a:hover,.footer-legal-links a:hover{color:#fff}
+.footer-legal-links{display:flex;align-items:center;gap:18px;flex:0 0 auto}
+.footer-legal-links a{color:#8e99ad;font-size:11px;text-decoration:none}
+@media (max-width:700px){
+  .premium-footer-bottom>.container{flex-direction:column!important;justify-content:center!important;gap:10px!important;text-align:center!important}
+  .footer-copyright-text{align-items:center}
+  .footer-copyright-text p,.footer-legal-links a{font-size:10px}
+}
+
+
+/* ============================================================
+   FOOTER BẢN QUYỀN GỌN ĐẸP — 2026-07-17
+   Chỉ thay bố cục chân trang, không đổi nội dung website.
+   ============================================================ */
+.premium-footer-bottom{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  z-index:20!important;
+  padding:0!important;
+  background:linear-gradient(180deg,#0a1528 0%,#081326 100%)!important;
+  border-top:1px solid rgba(255,255,255,.10)!important;
+  color:#9ba8bc!important;
+  text-align:center!important;
+}
+.premium-footer-bottom::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-1!important;
+  pointer-events:none!important;
+  background:radial-gradient(circle at 50% 0,rgba(91,201,255,.055),transparent 42%)!important;
+}
+.premium-footer-bottom>.footer-bottom-shell{
+  width:min(1180px,calc(100% - 40px))!important;
+  min-height:82px!important;
+  margin:0 auto!important;
+  padding:16px 0 18px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:7px!important;
+  text-align:center!important;
+}
+.footer-bottom-topline{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-wrap:wrap!important;
+  gap:10px!important;
+  color:#aab6c8!important;
+  font-family:inherit!important;
+  font-size:12px!important;
+  font-weight:400!important;
+  line-height:1.5!important;
+}
+.footer-bottom-topline>span,
+.footer-bottom-topline>a{
+  margin:0!important;
+  padding:0!important;
+}
+.footer-bottom-topline strong,
+.footer-credit-line strong{
+  color:#f1f5fb!important;
+  font-weight:700!important;
+}
+.footer-bottom-topline a,
+.footer-policy-link{
+  color:#b8c4d6!important;
+  text-decoration:none!important;
+  transition:color .2s ease!important;
+}
+.footer-bottom-topline a:hover,
+.footer-policy-link:hover{
+  color:#fff!important;
+}
+.footer-bottom-divider{
+  display:block!important;
+  width:1px!important;
+  height:13px!important;
+  flex:0 0 1px!important;
+  background:rgba(255,255,255,.21)!important;
+}
+.footer-credit-line{
+  color:#74829a!important;
+  font-family:inherit!important;
+  font-size:10.5px!important;
+  line-height:1.45!important;
+  letter-spacing:.01em!important;
+}
+/* Chặn mọi dấu chấm/trang trí cũ lọt vào phần bản quyền */
+.premium-footer-bottom .footer-bottom-topline>*::before,
+.premium-footer-bottom .footer-bottom-topline>*::after,
+.premium-footer-bottom .footer-credit-line::before,
+.premium-footer-bottom .footer-credit-line::after{
+  content:none!important;
+  display:none!important;
+}
+@media(max-width:700px){
+  .premium-footer-bottom>.footer-bottom-shell{
+    width:auto!important;
+    min-height:0!important;
+    margin:0 76px 0 16px!important;
+    padding:15px 0 17px!important;
+    align-items:flex-start!important;
+    gap:6px!important;
+    text-align:left!important;
+  }
+  .footer-bottom-topline{
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    flex-direction:column!important;
+    flex-wrap:nowrap!important;
+    gap:2px!important;
+    text-align:left!important;
+    font-size:10.5px!important;
+    line-height:1.45!important;
+  }
+  .footer-bottom-divider{display:none!important}
+  .footer-credit-line{
+    max-width:100%!important;
+    text-align:left!important;
+    font-size:9.5px!important;
+    line-height:1.45!important;
+  }
+}
+@media(min-width:701px) and (max-width:980px){
+  .premium-footer-bottom>.footer-bottom-shell{width:min(860px,calc(100% - 110px))!important}
+}
