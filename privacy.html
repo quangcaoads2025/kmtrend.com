@@ -17,7 +17,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="description" content="Chính sách bảo mật của KMTrend về việc thu thập, sử dụng, lưu trữ và bảo vệ thông tin khách hàng khi sử dụng dịch vụ.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://www.kmtrend.com/privacy.html">
-  <link rel="icon" href="assets/kmtrend-mark.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=20260717-1"/>
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=20260717-1"/>
+<link rel="shortcut icon" href="favicon.ico?v=20260717-1"/>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=20260717-1"/>
   <link rel="stylesheet" href="assets/style.css">
 
   <style>
@@ -61,10 +64,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .privacy-footer-column{display:flex;flex-direction:column;gap:9px}
     .privacy-footer-column h3{margin:0 0 9px;font-size:13px}
     .privacy-footer-column a,.privacy-footer-column span{color:#aeb8ca;font-size:11px}
-    .privacy-footer-bottom{border-top:1px solid rgba(255,255,255,.09);padding:16px 0;color:#748096;font-size:10px;text-align:center}
+    .privacy-footer-bottom{border-top:1px solid rgba(255,255,255,.09);padding:16px 20px;color:#748096;font-size:10px;text-align:center;line-height:1.5}
+    .privacy-footer-bottom p{margin:2px 0}
+    .privacy-footer-bottom a{color:#8e99ad;text-decoration:none}
+    .privacy-footer-bottom strong{color:#aeb8ca}
     @media(max-width:900px){.privacy-hero-grid,.privacy-layout{grid-template-columns:1fr}.privacy-nav{position:static}.privacy-contact-box{grid-template-columns:1fr}.privacy-contact-box a{width:100%}.privacy-footer-inner{grid-template-columns:1fr 1fr}.privacy-footer-logo{grid-column:1/-1}}
     @media(max-width:600px){.privacy-hero{padding:55px 0 40px}.privacy-hero h1{font-size:39px;letter-spacing:-1.8px}.privacy-lead{font-size:14px}.privacy-content{padding:55px 0 70px}.privacy-card{padding:23px 20px}.privacy-card h2{font-size:21px}.privacy-footer-inner{grid-template-columns:1fr;gap:30px}.privacy-footer-logo{grid-column:auto}}
-  </style>
+  
+    /* Footer bản quyền gọn, cân đối */
+    .privacy-footer-bottom{position:relative;isolation:isolate;overflow:hidden;background:#091426;padding:18px 20px 20px!important;border-top:1px solid rgba(255,255,255,.09);text-align:center;color:#9aa6ba}
+    .privacy-footer-bottom-topline{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;font-size:11px;line-height:1.5}
+    .privacy-footer-divider{width:1px;height:13px;background:rgba(255,255,255,.20)}
+    .privacy-footer-bottom a{color:#b7c2d3;text-decoration:none}
+    .privacy-footer-bottom strong{color:#eef3fb}
+    .privacy-footer-credit{margin-top:6px;font-size:10px;color:#718098;letter-spacing:.01em}
+    @media(max-width:600px){
+      .privacy-footer-bottom{padding:16px 78px 18px 16px!important;text-align:left}
+      .privacy-footer-bottom-topline{align-items:flex-start;justify-content:flex-start;flex-direction:column;gap:3px;font-size:10.5px}
+      .privacy-footer-divider{display:none}
+      .privacy-footer-credit{font-size:9.5px;line-height:1.45}
+    }
+</style>
 <link rel="stylesheet" href="assets/typography-standard.css">
 </head>
 <body>
@@ -144,7 +164,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="privacy-footer-column"><h3>Điều hướng</h3><a href="index.html">Trang chủ</a><a href="gioi-thieu.html">Giới thiệu</a><a href="dich-vu.html">Dịch vụ</a><a href="du-an.html">Dự án</a></div>
     <div class="privacy-footer-column"><h3>Liên hệ</h3><a href="tel:0848525352">0848 52 53 52</a><a href="mailto:quangcaoads2025@gmail.com">quangcaoads2025@gmail.com</a><span>Ninh Kiều, Cần Thơ</span></div>
   </div>
-  <div class="privacy-footer-bottom">© 2026 KMTrend. Bảo lưu mọi quyền.</div>
+  <div class="privacy-footer-bottom">
+    <div class="privacy-footer-bottom-topline">
+      <span>Copyright © 2026 <strong>KMTrend</strong></span>
+      <span class="privacy-footer-divider" aria-hidden="true"></span>
+      <span>Hỗ trợ: <a href="tel:0848525352">0848 52 53 52</a></span>
+    </div>
+    <div class="privacy-footer-credit">Powered &amp; Designed by <strong>MKT KMTREND.COM</strong></div>
+  </div>
 </footer>
 
 <div aria-label="Liên hệ nhanh" class="floating-contact">
