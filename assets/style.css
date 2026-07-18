@@ -2276,3 +2276,239 @@ textarea::placeholder{
 @media(min-width:701px) and (max-width:980px){
   .premium-footer-bottom>.footer-bottom-shell{width:min(860px,calc(100% - 110px))!important}
 }
+
+
+/* ============================================================
+   NÚT ĐĂNG KÝ NGAY + LÊN ĐẦU TRANG / GOOGLE FORM
+   ============================================================ */
+.floating-contact{
+  bottom:86px !important;
+}
+
+.floating-conversion-tools{
+  position:fixed;
+  right:20px;
+  bottom:max(20px, env(safe-area-inset-bottom));
+  z-index:96;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:10px;
+  pointer-events:none;
+}
+
+.floating-register-cta,
+.floating-back-top{
+  pointer-events:auto;
+}
+
+.floating-register-cta{
+  min-width:190px;
+  height:52px;
+  padding:5px 8px 5px 7px;
+  display:grid;
+  grid-template-columns:38px minmax(0,1fr) 30px;
+  align-items:center;
+  gap:9px;
+  border:1px solid rgba(255,255,255,.62);
+  border-radius:999px;
+  color:#fff;
+  background:linear-gradient(115deg,#ff643d 0%,#ff4826 52%,#f2381e 100%);
+  box-shadow:0 15px 34px rgba(242,56,30,.28), inset 0 1px 0 rgba(255,255,255,.34);
+  text-decoration:none !important;
+  overflow:hidden;
+  position:relative;
+  isolation:isolate;
+  transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.floating-register-cta::before{
+  content:"";
+  position:absolute;
+  inset:-45% auto -45% -32%;
+  width:42%;
+  z-index:-1;
+  transform:skewX(-18deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.34),transparent);
+  animation:floatingCtaShine 3.8s ease-in-out infinite;
+}
+
+.floating-register-cta:hover{
+  color:#fff;
+  transform:translateY(-2px);
+  filter:saturate(1.06);
+  box-shadow:0 19px 42px rgba(242,56,30,.35), inset 0 1px 0 rgba(255,255,255,.38);
+}
+
+.floating-register-icon{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.28);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.24);
+}
+
+.floating-register-icon svg{
+  width:22px;
+  height:22px;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.floating-register-text{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  line-height:1.05;
+  white-space:nowrap;
+}
+
+.floating-register-text strong{
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.01em;
+}
+
+.floating-register-text small{
+  margin-top:4px;
+  font-size:9px;
+  font-weight:600;
+  color:rgba(255,255,255,.82);
+}
+
+.floating-register-arrow{
+  width:29px;
+  height:29px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#fff;
+  color:#f04424;
+  font-size:17px;
+  font-weight:800;
+  transition:transform .2s ease;
+}
+
+.floating-register-cta:hover .floating-register-arrow{
+  transform:translateX(2px);
+}
+
+.floating-back-top{
+  width:50px;
+  height:50px;
+  padding:0;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  background:linear-gradient(145deg,#202b3c,#0e1623);
+  box-shadow:0 13px 30px rgba(8,15,27,.26), inset 0 1px 0 rgba(255,255,255,.13);
+  cursor:pointer;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px) scale(.9);
+  transition:opacity .22s ease, visibility .22s ease, transform .22s ease, box-shadow .2s ease;
+}
+
+.floating-back-top.is-visible{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0) scale(1);
+}
+
+.floating-back-top:hover{
+  transform:translateY(-2px) scale(1.03);
+  box-shadow:0 17px 36px rgba(8,15,27,.32), inset 0 1px 0 rgba(255,255,255,.16);
+}
+
+.floating-back-top svg{
+  width:22px;
+  height:22px;
+  stroke:currentColor;
+  stroke-width:2.1;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.lead-form button[disabled]{
+  cursor:wait;
+  opacity:.76;
+}
+
+.lead-form button.is-loading span{
+  display:inline-block;
+  animation:formSendingSpin .9s linear infinite;
+}
+
+.form-status.is-success{color:#138a5c !important;}
+.form-status.is-sending{color:#596579 !important;}
+.form-status.is-error{color:#c73c2d !important;}
+
+@keyframes floatingCtaShine{
+  0%,58%{left:-45%;opacity:0}
+  66%{opacity:1}
+  88%,100%{left:118%;opacity:0}
+}
+
+@keyframes formSendingSpin{
+  to{transform:rotate(360deg)}
+}
+
+@media(max-width:600px){
+  .floating-contact{
+    right:11px !important;
+    bottom:76px !important;
+  }
+
+  .floating-conversion-tools{
+    right:11px;
+    bottom:max(12px, env(safe-area-inset-bottom));
+    gap:7px;
+  }
+
+  .floating-register-cta{
+    min-width:155px;
+    height:47px;
+    grid-template-columns:33px minmax(0,1fr) 26px;
+    gap:7px;
+    padding:4px 6px 4px 5px;
+  }
+
+  .floating-register-icon{
+    width:33px;
+    height:33px;
+  }
+
+  .floating-register-icon svg{
+    width:19px;
+    height:19px;
+  }
+
+  .floating-register-text strong{font-size:11px;}
+  .floating-register-text small{font-size:8px;margin-top:3px;}
+  .floating-register-arrow{width:26px;height:26px;font-size:15px;}
+  .floating-back-top{width:45px;height:45px;}
+  .floating-back-top svg{width:20px;height:20px;}
+}
+
+@media(max-width:380px){
+  .floating-register-cta{
+    min-width:142px;
+  }
+  .floating-register-text small{
+    display:none;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .floating-register-cta::before,
+  .lead-form button.is-loading span{
+    animation:none !important;
+  }
+}
