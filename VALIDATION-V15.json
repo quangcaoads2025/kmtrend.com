@@ -1,0 +1,21 @@
+{
+  "html_files": 116,
+  "article_pages": 100,
+  "missing_assets": [],
+  "css_files": [
+    "assets/style.css",
+    "assets/legal-contact.css",
+    "assets/blog.css",
+    "assets/typography-standard.css"
+  ],
+  "js_files": [
+    "assets/legal-contact.js",
+    "assets/analytics-loader.js",
+    "assets/app.js",
+    "assets/blog.js"
+  ],
+  "brand_schema": true,
+  "initial_blog_visible": 9,
+  "home_articles": 4,
+  "status": "PASS"
+}
