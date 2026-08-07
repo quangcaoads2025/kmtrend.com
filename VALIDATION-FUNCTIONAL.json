@@ -1,0 +1,57 @@
+{
+  "home_no_overflow_desktop": true,
+  "home_4_articles": true,
+  "social_tabs_have_role": true,
+  "floating_hidden_at_top": true,
+  "social_switch": true,
+  "floating_visible_after_scroll": true,
+  "home_no_overflow_mobile": true,
+  "mobile_menu": true,
+  "blog_no_overflow": true,
+  "blog_total": 100,
+  "blog_page1_visible": 9,
+  "blog_page2_visible": 9,
+  "blog_search_visible": 1,
+  "contact_no_overflow_desktop": true,
+  "contact_icons": [
+    {
+      "w": "22px",
+      "h": "22px",
+      "fill": "none",
+      "stroke": "rgb(255, 118, 88)"
+    },
+    {
+      "w": "22px",
+      "h": "22px",
+      "fill": "none",
+      "stroke": "rgb(255, 118, 88)"
+    },
+    {
+      "w": "22px",
+      "h": "22px",
+      "fill": "none",
+      "stroke": "rgb(255, 118, 88)"
+    }
+  ],
+  "contact_no_overflow_mobile": true,
+  "service_no_overflow_desktop": true,
+  "service_difference_colors": {
+    "bg": "rgb(248, 250, 252)",
+    "border": "rgb(217, 226, 238)",
+    "heading": "rgb(21, 34, 56)",
+    "detail": "rgb(82, 96, 116)"
+  },
+  "service_no_overflow_mobile": true,
+  "policy_no_overflow": true,
+  "policy_en_active": true,
+  "article_no_overflow_desktop": true,
+  "article_h1_px": 36.72,
+  "article_cover_box": {
+    "x": 230,
+    "y": 447.9375,
+    "width": 980,
+    "height": 550
+  },
+  "article_no_overflow_mobile": true,
+  "article_h1_mobile_px": 28
+}
