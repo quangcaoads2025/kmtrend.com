@@ -1,0 +1,29 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self), payment=(), usb=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' 'strict-dynamic' 'sha256-+pU8N2mZtzy7oCaZ/FyUzm1pSuskPYayw1189G/RSsc=' 'sha256-+sZUEbuZr1UAiaXOF1DBwO88RPiV/3DdyiI3cinQIkM=' 'sha256-0kZJfIDV9jTpx+ntw+cSosq61+UU+qeEsoiNAa+Ls9k=' 'sha256-5VDZGrP5o2b3Vsjt3SwAmvUvrXayOW5juzNMlo8A4Dk=' 'sha256-6KILUmpFGfVT8cVa8IAhHESyMjgSsKD2Bf0eArWx2jA=' 'sha256-72qMrR4ILbjcTmcLuS4Z59QbKINiUQkKdhXiSLDJ/1I=' 'sha256-8W3OLwJdTBKS8Hhw3mqs/u74Pof0BHvsz31FVhQfk4M=' 'sha256-Auc2KcjjDoD4oVkSt0Qrsq1oZhRt7+Kb4rgg48Rja1Q=' 'sha256-ChXlPyxUMmsYFKgcBunTDAY6BOuVWJRk3bDsct64GWs=' 'sha256-F+MKg1OoSzF1TLmhdrp1FuaIKgb/iKD3qZqeg4ykSMg=' 'sha256-FppoTHz9Piu1NJkzulmzTjGB3wp18Tq78rdqVh3PvM8=' 'sha256-GbckyjLibDKij/SWfbP/6Hu9ZOc42GJJp+v3n4u2KFI=' 'sha256-Gz/iJ0WAneHKUSw6+ShhmUyharvr42R3P4jSSLHxuPM=' 'sha256-JCBO/pbscqIRNKEa29SQfcZ1/LG7MlGey8th4XGiutw=' 'sha256-RHHEo9JoOuB22+TCZ1X4lfqouQ/+j+68wgsFJloiYNE=' 'sha256-RY8FkeEAoOtlDAHQ7o61L1VN0il4R88nz2e6OTKkU+Q=' 'sha256-YtYnkhONYeRgU+Cujt5PMHlOni13gvT4uE8AcLvTV7M=' 'sha256-Znpm37vv42NpMZc2s/JtJ9LmKxhRoSvxtN03LaeqIG0=' 'sha256-blLjR9jbZiLSRXNSSVu0utzWwqjE4RXVTpQEpUwjuBE=' 'sha256-btK7VHqZocj8FTxIA2hkS2/BD5MNcq0TATaorjjH/pA=' 'sha256-dd175dBYW6Qr0+1k92ITecE79zLNn5Kpstfq0gWqQzw=' 'sha256-dyHDVwx+cuhrvQQQEiiX+Met0bJRDH7WYxWIqMP0Qp8=' 'sha256-kWDn0Jax99OKUXCMyGwB8ZIb5pkDuvpoX/IjE0+ygRo=' 'sha256-nFIcVz2PVumOzJyHsqc3Tk0BUCz2pRsYprK2SeRF4M8=' 'sha256-nlAJee8qQp5OAxaIwjfoewrCOMM/s1ilWMQq71tYqnY=' 'sha256-nr47Xra4eXKevCqe2OkQYn7wUy6WYKbmjxLZwNntkwc=' 'sha256-ohbVF1FZE25GR9rGQzdwJ1gTq6wnc7YKow27FBOXw7w=' 'sha256-onqGRauSQnUtmLoyEtpx2ZLhixsDQC4RyC4rc9i3X1Q=' 'sha256-p9Qm7AQSJ3C7o3NsNfNzO6Brp7EQhDBtDunOeElXLEQ=' 'sha256-qbd4kEYvNon85B67nYXh0XmwnhRc+eI/6TrwYwfXrls=' 'sha256-xU7AbMboeddvnrsQyOfSi4nV4MKJbhqCxDk5aa+BE+4=' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://docs.google.com https://script.google.com https://script.googleusercontent.com; frame-src 'self' https://docs.google.com https://www.google.com https://www.googletagmanager.com; form-action 'self' https://docs.google.com https://script.google.com; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types default goog#html 'allow-duplicates'
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/assets/catalogs/*
+  Cache-Control: public, max-age=604800
+
+/favicon.ico
+  Cache-Control: public, max-age=604800
+
+/manifest.webmanifest
+  Cache-Control: public, max-age=86400

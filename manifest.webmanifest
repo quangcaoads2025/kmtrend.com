@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "BYD Cà Mau",
+  "short_name": "BYD Cà Mau",
+  "description": "BYD Cà Mau cập nhật bảng giá, giá lăn bánh, ưu đãi và hỗ trợ trả góp các mẫu xe BYD mới nhất. Đăng ký lái thử, gọi 0848 52 53 52.",
+  "lang": "vi-VN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-192x192-v31.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/favicon-512x512-v31.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
