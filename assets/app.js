@@ -94,21 +94,22 @@ if (leadForm) {
   });
 }
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.animate(
-        [{opacity:0, transform:'translateY(18px)'}, {opacity:1, transform:'translateY(0)'}],
-        {duration:520, easing:'ease-out', fill:'both'}
-      );
-      observer.unobserve(entry.target);
-    }
-  });
-}, {threshold:.12});
-
-document.querySelectorAll('.service-card,.process-card,.project-card,.article-card,.detail-grid article').forEach(el => {
-  observer.observe(el);
-});
+const revealTargets = document.querySelectorAll('.service-card,.process-card,.project-card,.article-card,.detail-grid article');
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      if (typeof entry.target.animate === 'function') {
+        entry.target.animate(
+          [{opacity:0, transform:'translateY(18px)'}, {opacity:1, transform:'translateY(0)'}],
+          {duration:520, easing:'ease-out', fill:'both'}
+        );
+      }
+      revealObserver.unobserve(entry.target);
+    });
+  }, {threshold:.12});
+  revealTargets.forEach(el => revealObserver.observe(el));
+}
 
 
 // Social solution tabs — keyboard and ARIA complete.
@@ -167,18 +168,13 @@ const setFloatingToolsVisible = (visible) => {
   floatingRegisterButtons.forEach((button) => button.classList.toggle('is-visible', visible));
 };
 
-if ('IntersectionObserver' in window) {
-  const floatingSentinel = document.createElement('span');
-  floatingSentinel.setAttribute('aria-hidden', 'true');
-  floatingSentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none';
-  document.body.prepend(floatingSentinel);
-  const floatingObserver = new IntersectionObserver(([entry]) => {
-    setFloatingToolsVisible(!entry.isIntersecting);
-  }, { rootMargin: '520px 0px 0px 0px', threshold: 0 });
-  floatingObserver.observe(floatingSentinel);
-} else {
-  setFloatingToolsVisible(false);
-}
+// Hiện các nút khi người dùng đã cuộn khỏi phần đầu trang.
+// Dùng scrollY trực tiếp để nút không phụ thuộc vào IntersectionObserver
+// hoặc sentinel có thể bị ảnh hưởng bởi trình duyệt và bố cục từng trang.
+const syncFloatingTools = () => setFloatingToolsVisible(window.scrollY > 260);
+window.addEventListener('scroll', syncFloatingTools, { passive: true });
+window.addEventListener('pageshow', syncFloatingTools);
+syncFloatingTools();
 
 backTopButton?.addEventListener('click', () => {
   window.scrollTo({top:0, behavior:'smooth'});
